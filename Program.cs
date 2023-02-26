@@ -10,6 +10,12 @@ namespace Assignment1 {
             int passcode4 = int.Parse(Console.ReadLine());
             int passcode5 = int.Parse(Console.ReadLine());
             int passcode6 = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter your affiliation (CSI, FBI, NSA): ");
+            string aff = (Console.ReadLine());
+            string csi;
+            string fbi;
+            string nsa;
         }
     }
 }
