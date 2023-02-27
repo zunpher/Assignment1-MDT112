@@ -42,7 +42,7 @@ namespace Assignment1 {
                     case "FBI" :
                     if (digit6 >= 4 && digit6 <= 7) {
                         if (digit3 % 2 == 0 && digit3 != 6) {
-                            if (digit1==7 || digit2==7 || digit3==7 || digit4==7 || digit5==7 || digit6==7) {
+                            if (digit5 == 1 || digit5 == 3 || digit5 == 5 || digit5 == 7 || digit5 == 9) {
                                 Console.WriteLine("True");
                             } else {
                                 Console.WriteLine("False");
@@ -56,6 +56,19 @@ namespace Assignment1 {
                     break;
 
                     case "NSA" :
+                    if (digit1 == 1 || digit1 == 2 || digit1 == 3 || digit1 == 5 || digit1 == 6) {
+                        if (digit3 % 3 == 0 && digit3 % 2 != 0) {
+                            if (digit1==7 || digit2==7 || digit3==7 || digit4==7 || digit5==7 || digit6==7) {
+                                Console.WriteLine("True");
+                            } else {
+                                Console.WriteLine("False");
+                            }
+                        } else {
+                            Console.WriteLine("False");
+                        }
+                    } else {
+                        Console.WriteLine("False");
+                    }
                     break;
 
                     default :
