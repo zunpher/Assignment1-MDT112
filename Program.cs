@@ -9,6 +9,17 @@ namespace Assignment1 {
             if (passcode > 99999 && passcode < 1000000) {
                 Console.Write("Enter your affiliation (CIA, FBI, NSA): ");
                 string aff = Console.ReadLine();
+
+                switch (aff) {
+                    case "CIA" :
+                    break;
+
+                    case "FBI" :
+                    break;
+
+                    case "NSA" :
+                    break;
+                }
             } else {
                 Console.WriteLine("False");
             }
