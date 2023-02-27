@@ -9,6 +9,7 @@ namespace Assignment1 {
             if (passcode > 99999 && passcode < 1000000) {
                 Console.Write("Enter your affiliation (CIA, FBI, NSA): ");
                 string aff = Console.ReadLine();
+
                 int digit1 = passcode % 10;
                 int dg2Ctrl = passcode / 10;
                 int digit2 = dg2Ctrl % 10;
@@ -39,7 +40,19 @@ namespace Assignment1 {
                     break;
 
                     case "FBI" :
-                    
+                    if (digit6 >= 4 && digit6 <= 7) {
+                        if (digit3 % 2 == 0 && digit3 != 6) {
+                            if (digit1==7 || digit2==7 || digit3==7 || digit4==7 || digit5==7 || digit6==7) {
+                                Console.WriteLine("True");
+                            } else {
+                                Console.WriteLine("False");
+                            }
+                        } else {
+                            Console.WriteLine("False");
+                        }
+                    } else {
+                        Console.WriteLine("False");
+                    }
                     break;
 
                     case "NSA" :
