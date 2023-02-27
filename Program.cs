@@ -4,18 +4,12 @@ namespace Assignment1 {
     class Program {
         static void Main(string[] args) {
             Console.Write("Enter your passcode (6 digits): ");
-            int passcode1 = int.Parse(Console.ReadLine());
-            int passcode2 = int.Parse(Console.ReadLine());
-            int passcode3 = int.Parse(Console.ReadLine());
-            int passcode4 = int.Parse(Console.ReadLine());
-            int passcode5 = int.Parse(Console.ReadLine());
-            int passcode6 = int.Parse(Console.ReadLine());
-
-            Console.Write("Enter your affiliation (CSI, FBI, NSA): ");
-            string aff = (Console.ReadLine());
-            string csi;
-            string fbi;
-            string nsa;
+            int pass1 = Console.Read();
+            int pass2 = Console.Read();
+            int pass3 = Console.Read();
+            int pass4 = Console.Read();
+            int pass5 = Console.Read();
+            int pass6 = Console.Read();
         }
     }
 }
